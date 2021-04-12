@@ -1,0 +1,17 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  datasource:
+    url: jdbc:mysql://localhost:3306/exam_online?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    com.yegol.exam_online.controller.ExamControllerTest: debug
+    com.yegol.exam_online.service.impl.ExamServiceImplTest: debug
+    com.yegol.exam_online.service.impl.QuestionServiceImplTest: debug
